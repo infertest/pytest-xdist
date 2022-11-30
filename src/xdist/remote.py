@@ -180,7 +180,7 @@ class WorkerInteractor:
         data["item_index"] = self.item_index
         data["worker_id"] = self.workerid
         data["testrun_uid"] = self.testrunuid
-        assert self.session.items[self.item_index].nodeid == report.nodeid
+#         assert self.session.items[self.item_index].nodeid == report.nodeid
         self.sendevent("testreport", data=data)
 
     @pytest.hookimpl
